@@ -57,33 +57,22 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="fullHeightSidebar.ts" />
-    <TypeScriptCompile Include="fullHeightSidebar.d.ts" />
-    <Content Include="fullHeightSidebar.d.js">
-      <DependentUpon>fullHeightSidebar.d.ts</DependentUpon>
-    </Content>
-    <Content Include="fullHeightSidebar.js">
+    <None Include="FullHeightSidebar.nuspec" />
+    <TypeScriptCompile Include="Scripts\fullHeightSidebar.ts" />
+    <TypeScriptCompile Include="Scripts\fullHeightSidebar.d.ts" />
+    <Content Include="Scripts\fullHeightSidebar.js">
       <DependentUpon>fullHeightSidebar.ts</DependentUpon>
     </Content>
-    <Content Include="fullHeightSidebar.min.js">
+    <Content Include="Scripts\fullHeightSidebar.min.js">
       <DependentUpon>fullHeightSidebar.ts</DependentUpon>
     </Content>
     <TypeScriptCompile Include="jquery.d.ts" />
     <Content Include="jquery.d.js">
       <DependentUpon>jquery.d.ts</DependentUpon>
     </Content>
-    <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

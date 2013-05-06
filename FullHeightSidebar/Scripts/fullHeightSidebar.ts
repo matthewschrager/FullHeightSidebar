@@ -1,4 +1,4 @@
-/// <reference path='jquery.d.ts' />
+/// <reference path='../jquery.d.ts' />
 /// <reference path='fullHeightSidebar.d.ts' />
 
 class FHSImpl implements FHS
